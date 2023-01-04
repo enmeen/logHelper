@@ -1,0 +1,22 @@
+{
+    "name": "log-helper",
+    "version": "1.0.0",
+    "description": "log-helper",
+    "manifest_version": 3,
+    "author": "yanfeixie",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "log-helper"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
